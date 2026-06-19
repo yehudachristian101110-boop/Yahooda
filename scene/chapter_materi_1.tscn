@@ -1,0 +1,181 @@
+[gd_scene format=3 uid="uid://cxstu60unp77n"]
+
+[ext_resource type="Texture2D" uid="uid://bqe5yfpk334kp" path="res://background/e294922b-a1de-4bd9-ba53-a0f1ce5dbc99.png" id="1_ky8wq"]
+[ext_resource type="Script" uid="uid://cwi67aulquvwe" path="res://script/chapter_materi_1.gd" id="1_tqpmj"]
+[ext_resource type="FontFile" uid="uid://b8j2w7j4cive6" path="res://background/GrapeSoda.ttf" id="2_tqpmj"]
+[ext_resource type="Texture2D" uid="uid://cmqkac1e8qj32" path="res://touch_controls/texture/touchbutton/mobile-controls-1/Vector/Style D/direction_left.svg" id="4_dqe27"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dqe27"]
+texture = ExtResource("1_ky8wq")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_47hvn"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tqpmj"]
+bg_color = Color(0.63375676, 0.6337568, 0.63375676, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqe27"]
+bg_color = Color(0.8235294, 0.8235294, 0.8235294, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lwqom"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7f44b"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ky8wq"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dqe27"]
+
+[node name="ChapterMateri1" type="Control" unique_id=1850333804]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tqpmj")
+
+[node name="Panel" type="Panel" parent="." unique_id=400669139]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_dqe27")
+
+[node name="Button" type="Button" parent="." unique_id=574793570]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.11100001
+anchor_top = 0.49400002
+anchor_right = 0.11100001
+anchor_bottom = 0.49400002
+offset_left = -11.872009
+offset_top = -0.11199951
+offset_right = 180.12799
+offset_bottom = 192.888
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_47hvn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tqpmj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dqe27")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lwqom")
+text = "Chapter 1"
+
+[node name="Button2" type="Button" parent="." unique_id=324259266]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.076000005
+anchor_top = 0.47500002
+anchor_right = 0.076000005
+anchor_bottom = 0.47500002
+offset_left = 410.448
+offset_top = 12.199982
+offset_right = 602.448
+offset_bottom = 205.19998
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_7f44b")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tqpmj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dqe27")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lwqom")
+text = "Chapter 2"
+
+[node name="Button3" type="Button" parent="." unique_id=77799449]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.076000005
+anchor_top = 0.47500002
+anchor_right = 0.076000005
+anchor_bottom = 0.47500002
+offset_left = 780.448
+offset_top = 12.199982
+offset_right = 972.448
+offset_bottom = 205.19998
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ky8wq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tqpmj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dqe27")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lwqom")
+text = "Chapter 3"
+
+[node name="Label" type="Label" parent="." unique_id=1255736241]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -331.0
+offset_top = 4.0
+offset_right = 407.0
+offset_bottom = 247.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 15
+theme_override_fonts/font = ExtResource("2_tqpmj")
+theme_override_font_sizes/font_size = 118
+text = "PILIH CHAPTER"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_trim_flags = 128
+
+[node name="BackButton" type="Button" parent="." unique_id=1837932453]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -102.0
+offset_right = 119.0
+offset_bottom = -11.0
+grow_vertical = 0
+theme_type_variation = &"FlatButton"
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dqe27")
+icon = ExtResource("4_dqe27")
+expand_icon = true
+
+[connection signal="pressed" from="Button" to="." method="_on_chapter_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_chapter_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_chapter_3_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

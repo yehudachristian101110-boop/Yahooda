@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://bxb1ki3ji7w17"]
+
+[ext_resource type="Script" uid="uid://bbxhbkohqww48" path="res://script/main_menu.gd" id="1_2fwvj"]
+[ext_resource type="Texture2D" uid="uid://bqe5yfpk334kp" path="res://background/e294922b-a1de-4bd9-ba53-a0f1ce5dbc99.png" id="1_hxu56"]
+[ext_resource type="FontFile" uid="uid://b8j2w7j4cive6" path="res://background/GrapeSoda.ttf" id="2_2fwvj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0iwki"]
+texture = ExtResource("1_hxu56")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sepwh"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_14wem"]
+bg_color = Color(0.63784313, 0.6378432, 0.63784295, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+shadow_size = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_by01r"]
+
+[node name="MainMenu" type="Control" unique_id=134706306]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2fwvj")
+
+[node name="Panel" type="Panel" parent="." unique_id=2020800717]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_0iwki")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2131076646]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -178.0
+offset_top = -322.0
+offset_right = 204.0
+offset_bottom = -47.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 19
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=476120058]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 500
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_sepwh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_14wem")
+theme_override_styles/hover = SubResource("StyleBoxFlat_14wem")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_by01r")
+text = "Mulai"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1569496027]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 500
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_sepwh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_14wem")
+theme_override_styles/hover = SubResource("StyleBoxFlat_14wem")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_by01r")
+text = "Pengaturan"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=2026914878]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 500
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_sepwh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_14wem")
+theme_override_styles/hover = SubResource("StyleBoxFlat_14wem")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_by01r")
+text = "Keluar"
+
+[node name="Label" type="Label" parent="." unique_id=1005471257]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -336.0
+offset_top = 22.0
+offset_right = 343.0
+offset_bottom = 265.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 15
+theme_override_fonts/font = ExtResource("2_2fwvj")
+theme_override_font_sizes/font_size = 118
+text = "WELCOME TO
+MURIWA"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_trim_flags = 128
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_mulai_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_pengaturan_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_keluar_pressed"]

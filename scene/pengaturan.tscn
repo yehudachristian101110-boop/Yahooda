@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://cbswpdijxsubj"]
+
+[ext_resource type="Script" uid="uid://cg21kbirj38u3" path="res://script/pengaturan.gd" id="1_akd33"]
+[ext_resource type="Texture2D" uid="uid://bqe5yfpk334kp" path="res://background/e294922b-a1de-4bd9-ba53-a0f1ce5dbc99.png" id="1_qwe6o"]
+[ext_resource type="FontFile" uid="uid://b8j2w7j4cive6" path="res://background/GrapeSoda.ttf" id="2_lndpd"]
+[ext_resource type="Texture2D" uid="uid://cmqkac1e8qj32" path="res://touch_controls/texture/touchbutton/mobile-controls-1/Vector/Style D/direction_left.svg" id="4_r5y1y"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lndpd"]
+texture = ExtResource("1_qwe6o")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r5y1y"]
+
+[node name="Pengaturan" type="Control" unique_id=548296226]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_akd33")
+
+[node name="Panel" type="Panel" parent="." unique_id=519276933]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_lndpd")
+
+[node name="Label" type="Label" parent="." unique_id=1839720352]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -315.5
+offset_top = 7.0
+offset_right = 363.5
+offset_bottom = 250.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 15
+theme_override_fonts/font = ExtResource("2_lndpd")
+theme_override_font_sizes/font_size = 118
+text = "PENGATURAN"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_trim_flags = 128
+
+[node name="BackButton" type="Button" parent="." unique_id=1280226015]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -102.0
+offset_right = 119.0
+offset_bottom = -11.0
+grow_vertical = 0
+theme_type_variation = &"FlatButton"
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_r5y1y")
+icon = ExtResource("4_r5y1y")
+expand_icon = true
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bskwui0di4vfk"
+path="res://.godot/imported/fiikuri-free-quotjavanese-vibesquot-gamelan-music-music-for-creator-383176.mp3 (online-audio-converter.com).mp3-7ce57836f19182a338b5c6814847576c.mp3str"
+
+[deps]
+
+source_file="res://background/fiikuri-free-quotjavanese-vibesquot-gamelan-music-music-for-creator-383176.mp3 (online-audio-converter.com).mp3"
+dest_files=["res://.godot/imported/fiikuri-free-quotjavanese-vibesquot-gamelan-music-music-for-creator-383176.mp3 (online-audio-converter.com).mp3-7ce57836f19182a338b5c6814847576c.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,165 @@
+[gd_scene format=3 uid="uid://be7s7j2oll6po"]
+
+[ext_resource type="Script" uid="uid://bh6ja45r86cwf" path="res://script/main_materi.gd" id="1_6a6fp"]
+[ext_resource type="Texture2D" uid="uid://bqe5yfpk334kp" path="res://background/e294922b-a1de-4bd9-ba53-a0f1ce5dbc99.png" id="2_7svme"]
+[ext_resource type="FontFile" uid="uid://b8j2w7j4cive6" path="res://background/GrapeSoda.ttf" id="3_tntdj"]
+[ext_resource type="Texture2D" uid="uid://cmqkac1e8qj32" path="res://touch_controls/texture/touchbutton/mobile-controls-1/Vector/Style D/direction_left.svg" id="4_7svme"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_svpuv"]
+texture = ExtResource("2_7svme")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t5kkr"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_222jo"]
+bg_color = Color(0.6337567, 0.6337569, 0.6337566, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+shadow_size = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_15t40"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tntdj"]
+
+[node name="main_materi" type="Control" unique_id=1578304439]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6a6fp")
+metadata/_edit_horizontal_guides_ = [-562.0]
+
+[node name="Panel" type="Panel" parent="." unique_id=1237913572]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_svpuv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1382751780]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -214.875
+offset_top = -75.5
+offset_right = 214.875
+offset_bottom = 271.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=784875084]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 500
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_t5kkr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_222jo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_222jo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_15t40")
+text = "Materi 1"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=207148472]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 500
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_t5kkr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_222jo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_222jo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_15t40")
+text = "Materi 2"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=429410880]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 500
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_t5kkr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_222jo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_222jo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_15t40")
+text = "Materi 3"
+
+[node name="Button4" type="Button" parent="VBoxContainer" unique_id=1751517531]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 500
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_t5kkr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_222jo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_222jo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_15t40")
+text = "Materi 4"
+
+[node name="Label" type="Label" parent="." unique_id=1876266584]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -339.5
+offset_top = 4.0
+offset_right = 339.5
+offset_bottom = 247.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 15
+theme_override_fonts/font = ExtResource("3_tntdj")
+theme_override_font_sizes/font_size = 118
+text = "PILIH MATERI"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_trim_flags = 128
+
+[node name="BackButton" type="Button" parent="." unique_id=1585705700]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -102.0
+offset_right = 119.0
+offset_bottom = -11.0
+grow_vertical = 0
+theme_type_variation = &"FlatButton"
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_tntdj")
+icon = ExtResource("4_7svme")
+expand_icon = true
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_materi_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_materi_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_materi_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_materi_4_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
